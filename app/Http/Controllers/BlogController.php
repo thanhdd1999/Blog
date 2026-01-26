@@ -11,6 +11,7 @@ class BlogController extends Controller
 {
     public function index()
     {
+        // Fake edit: Added comment for testing
         $blog = Blog::all();
         return view('blog.list', compact('blog'));
     }
